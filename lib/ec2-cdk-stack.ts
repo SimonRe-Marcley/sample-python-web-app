@@ -111,7 +111,7 @@ export class Ec2CdkStack extends cdk.Stack {
       oauthToken: SecretValue.secretsManager('github-oauth-token'), // MAKE SURE TO SET UP BEFORE
       owner: 'SimonRe-Marcley', // THIS NEEDS TO BE CHANGED TO YOUR OWN USER ID
       repo: 'sample-python-web-app',
-      branch: 'main',
+      branch: 'master',
       output: sourceOutput,
     });
     sourceStage.addAction(githubSourceAction)
